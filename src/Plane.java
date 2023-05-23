@@ -1,7 +1,7 @@
 public class Plane extends Vehicle {
 
-    private int flightAltitude;
-    private int numberPassengers;
+    private final int flightAltitude;
+    private final int numberPassengers;
 
     public Plane(String name, double coordinateX, double coordinateY, int speed, int price, int yearOfManufacture, int flightAltitude, int numberPassengers) {
         super(name, coordinateX, coordinateY, speed, price, yearOfManufacture);
@@ -11,15 +11,6 @@ public class Plane extends Vehicle {
 
     @Override
     public String toString() {
-        return "Plane{" +
-                "name=" + name +
-                ", numberPassengers=" + numberPassengers +
-                ", flightAltitude='" + flightAltitude + '\'' +
-                ", coordinateX=" + coordinateX +
-                ", coordinateY=" + coordinateY +
-                ", speed=" + speed +
-                ", price=" + price +
-                ", yearOfManufacture=" + yearOfManufacture +
-                '}';
+        return "Plane: " + super.toString() + ", numberPassengers=" + numberPassengers + ", flightAltitude=" + flightAltitude;
     }
 }

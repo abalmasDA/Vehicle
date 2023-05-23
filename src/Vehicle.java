@@ -16,4 +16,13 @@ public class Vehicle {
         this.price = price;
         this.yearOfManufacture = yearOfManufacture;
     }
+
+    @Override
+    public String toString() {
+        return "name=" + name + ", coordinateX=" + coordinateX +
+                ", coordinateY=" + coordinateY +
+                ", speed=" + speed +
+                ", price=" + price +
+                ", yearOfManufacture=" + yearOfManufacture;
+    }
 }
